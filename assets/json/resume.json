@@ -1,36 +1,35 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Tanvir Ferdousi",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "tanvir@virginia.edu",
+    "phone": "(785) 320-3457",
+    "url": "https://tanvir-ferdousi.github.io/",
+    "summary": "A Bangladeshi-born computer scientist and software engineer, with expertise in network science, machine learning, and high performance systems",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "994 Research Park BLVD",
+      "postalCode": "VA 22911",
+      "city": "Charlottesville",
       "countryCode": "US",
-      "region": "California"
+      "region": "Virginia"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "tanvir-ferdousi",
+        "url": "https://www.linkedin.com/in/tanvir-ferdousi/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "Biocomplexity Institute, University of Virginia",
+      "position": "Postdoctoral Research Associate",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "startDate": "2021-08-25",
+      "summary": "Researcher in Network Systems Science and Advanced Computing",
+      "highlights": ["High Performance Computing"]
     }
   ],
   "volunteer": [
@@ -46,8 +45,8 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
+      "institution": "Kansas State University",
+      "location": "Manhattan, KS, USA",
       "url": "https://www.uzh.ch/",
       "area": "Software Development",
       "studyType": "PhD",
