@@ -31,6 +31,6 @@ We find that high in-degree farm operations play critical roles in spreading the
 
 | Publication | Source Code | Official Project Page |
 |-------------|----------|--------|
-| [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225785) | [GitHub](https://github.com/tanvir-ferdousi/movement-network-asfv) | [K-State NetSE](http://www.ece.k-state.edu/netse/projects/sprojects/proj17.html) |
+| [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225785) | [GitHub](https://github.com/tanvir-ferdousi/movement-network-asfv) | [K-State NetSE](http://www.ece.k-state.edu/netse/projects/science_projects/proj17.html) |
 {:.table .table-bordered}
 <!-- The work was published in PLoS ONE, which can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225785). The official project page of the NetSE group can be found [here](http://www.ece.k-state.edu/netse/projects/sprojects/proj17.html). -->

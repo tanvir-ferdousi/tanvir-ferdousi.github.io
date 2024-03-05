@@ -44,6 +44,6 @@ The simulation results suggest that for a high relative transmissibility of the 
 
 | Publication | Source Code | Official Project Page |
 |-------------|----------|--------|
-| [Scientific Reports](https://doi.org/10.1038/s41598-019-43651-3) | [GitHub](https://github.com/tanvir-ferdousi/intercon-network-zikv) | [K-State NetSE](http://www.ece.k-state.edu/netse/projects/sprojects/longdistance.html) |
+| [Scientific Reports](https://doi.org/10.1038/s41598-019-43651-3) | [GitHub](https://github.com/tanvir-ferdousi/intercon-network-zikv) | [K-State NetSE](http://www.ece.k-state.edu/netse/projects/science_projects/longdistance.html) |
 {:.table .table-bordered}
 <!-- The work was published in Scientific Reports (Nature), which can be accessed via this [link](https://doi.org/10.1038/s41598-019-43651-3). The official project page of the NetSE group can be found [here](http://www.ece.k-state.edu/netse/projects/sprojects/longdistance.html). -->

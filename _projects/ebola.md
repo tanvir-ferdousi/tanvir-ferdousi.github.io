@@ -31,7 +31,7 @@ Our results indicate that it is critical to start contact tracing within a few d
 
 | Publication | Source Code | Official Project Page |
 |-------------|----------|--------|
-| [Mathematical Biosciences and Engineering](https://www.aimspress.com/article/10.3934/mbe.2018053) | Not Published | [K-State NetSE](https://www.ece.k-state.edu/netse/projects/sprojects/proj0.html) |
+| [Mathematical Biosciences and Engineering](https://www.aimspress.com/article/10.3934/mbe.2018053) | Not Published | [K-State NetSE](https://ece.k-state.edu/netse/projects/science_projects/proj0.html) |
 {:.table .table-bordered}
 
 <!-- The work was published in Mathematical Biosciences and Engineering (MBE) journal which can be accessed via this [link](https://www.aimspress.com/article/10.3934/mbe.2018053). The official project page of the NetSE group can be found [here](https://www.ece.k-state.edu/netse/projects/sprojects/proj0.html). -->
