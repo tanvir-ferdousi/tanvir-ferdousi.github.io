@@ -2,7 +2,7 @@
 layout: page
 title: Contact tracing with Ebola
 description: Quantifying the impact of early-stage contact tracing using activity driven networks
-img: assets/img/ebola.jpg
+img: assets/img/ebola/ebolaCT_model.jpg
 importance: 4
 category: epidemic model
 ---
