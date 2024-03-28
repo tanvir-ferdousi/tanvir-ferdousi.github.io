@@ -12,21 +12,33 @@
   type: time_table
   contents:
     - title: PhD in Computer Engineering
-      institution: Kansas State University, Manhattan, KS, USA
+      institution: Kansas State University (K-State), Manhattan, KS, USA
       year: 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Network Epidemic Models
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
+            - Designed and developed a hybrid compartmental agent-based model to simulate the spread of Zika virus using both vectored and sexual transmission mechanisms in a sexual contact network.
+            - Developed a network epidemic model to simulate African Swine Fever (ASF) virus spread in US swine movement networks.
+        - title: Graph Mining
+          contents:
+            - Designed a graph generation model to generate random graph for sexual contact among adult population based on agregate data on sexual behavior in the USA.
+            - Designed a graph generation model that combines multiple aggregate datasets to produce animal movement graphs in the USA.
+        - title: Machine Learning
+          contents:
+            - Developed a feature selection framework to improve the performance of predicting time series data for weekly dengue cases when training data is inadequate.
+        - title: Blockchain
+          contents:
+            - Designed a blockchain-based distributed data management system for US beef cattle supply chains using Ethereum smart contracts.
+        - title: Data Analytics as a Service
+          contents:
+            - Developed a web-based dashboard to visualize data, run simulations, and analyze results of dengue risk forecasts with a map interface using leaflet.js and PostGIS.
+
     - title: BSc in Electrical and Electronic Engineering
-      institution: Bangladesh University of Engineering and Technology, Dhaka, Bangladesh
+      institution: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
       year: 2013
       description:
-        - Description 1.
-        - Description 2.
+        - Dissertation on "Design of a honeycomb all solid photonic bandgap fiber for a wide visible region"
+        - Courses on Solid State Devices, Control Systems, Microwave Engineering, Digital Signal Processing, VLSI, Microprocessor and Interfacing, Numerical Computing, etc.
 
 - title: Experience
   type: time_table
@@ -50,16 +62,12 @@
 
     - title: Senior Software Engineer
       institution: Samsung R&D Institute Bangladesh, Dhaka, Bangladesh.
-      year: 1917-1933
+      year: 2013-2016
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Research Engineer
+      institution: Institute of Information and Communication Technology (IICT), BUET, Dhaka, Bangladesh
+      year: 2013 - 2013
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
 
 - title: Open Source Projects
   type: time_table
@@ -71,7 +79,7 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2008
       items:
         - Nobel Prize in Physics
         - Matteucci Medal
