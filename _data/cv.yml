@@ -38,11 +38,11 @@
       institution: Biocomplexity Institute, University of Virginia, Charlottesville, VA, USA
       year: 2021 - Current
       description:
-        - title: CINES: A CyberInfrastructure for Network Engineering and Science.
+        - title: A CyberInfrastructure for Network Engineering and Science (CINES)
           contents:
             - Developed graph analytics tools capable of large-scale computations (~10^6 nodes/edges) in a software as a service (SaaS) architecture using HPC backend.
             - Mentored a student in developing a financial contagion simulator using the Eisenberg-Noe model to evaluate the impact of bailout strategies in reducing cascading failures in bank lending networks.
-        - title: AgAID: AI Institute for Transforming Workforce & Decision Support.
+        - title: AI Institute for Transforming Workforce & Decision Support (AgAID)
           contents:
             - Developed an explainable AI (XAI) framework for geospatial data using Shapley analysis in combination with supervised (random forest) and unsupervised (k-means clustering) learning. The framework was used to evaluate the impact of climate change on water availability and crop yield in the Western United States.
             - Designed and deployed a high performance computing pipeline for automated preprocessing, batch job submission, monitoring, and postprocessing of VIC-CropSyst simulation in UVA’s Rivanna HPC clusters
