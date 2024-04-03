@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A selection of my projects from my PhD program.
 nav: true
 nav_order: 3
 display_categories: [graph mining, epidemic model]

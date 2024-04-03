@@ -15,23 +15,14 @@
       institution: Kansas State University (K-State), Manhattan, KS, USA
       year: 2021
       description:
-        - title: Network Epidemic Models
+        - title: Dissertation
           contents:
-            - Designed and developed a hybrid compartmental agent-based model to simulate the spread of Zika virus using both vectored and sexual transmission mechanisms in a sexual contact network.
-            - Developed a network epidemic model to simulate African Swine Fever (ASF) virus spread in US swine movement networks.
-        - title: Graph Mining
+            - Computational Models and Tools for Analysis, Prediction, and Control of Infectious Diseases
+            - <a href="https://hdl.handle.net/2097/41449">PDF Link</a>
+        - title: Courses
           contents:
-            - Designed a graph generation model to generate random graph for sexual contact among adult population based on agregate data on sexual behavior in the USA.
-            - Designed a graph generation model that combines multiple aggregate datasets to produce animal movement graphs in the USA.
-        - title: Machine Learning
-          contents:
-            - Developed a feature selection framework to improve the performance of predicting time series data for weekly dengue cases when training data is inadequate.
-        - title: Blockchain
-          contents:
-            - Designed a blockchain-based distributed data management system for US beef cattle supply chains using Ethereum smart contracts.
-        - title: Data Analytics as a Service
-          contents:
-            - Developed a web-based dashboard to visualize data, run simulations, and analyze results of dengue risk forecasts with a map interface using leaflet.js and PostGIS.
+            - Co-Taught 'Introduction to Blockchains' as a part of the graduate course curriculum.
+            - Took courses on Analysis of Algorithms, Multivariate Statistical Methods, Agent-Based Game Theory, Network Theory, Machine Learning and Pattern Recognition, etc.
 
     - title: BSc in Electrical and Electronic Engineering
       institution: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
@@ -47,59 +38,87 @@
       institution: Biocomplexity Institute, University of Virginia, Charlottesville, VA, USA
       year: 2021 - Current
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: CINES: A CyberInfrastructure for Network Engineering and Science.
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
+            - Developed graph analytics tools capable of large-scale computations (~10^6 nodes/edges) in a software as a service (SaaS) architecture using HPC backend.
+            - Mentored a student in developing a financial contagion simulator using the Eisenberg-Noe model to evaluate the impact of bailout strategies in reducing cascading failures in bank lending networks.
+        - title: AgAID: AI Institute for Transforming Workforce & Decision Support.
+          contents:
+            - Developed an explainable AI (XAI) framework for geospatial data using Shapley analysis in combination with supervised (random forest) and unsupervised (k-means clustering) learning. The framework was used to evaluate the impact of climate change on water availability and crop yield in the Western United States.
+            - Designed and deployed a high performance computing pipeline for automated preprocessing, batch job submission, monitoring, and postprocessing of VIC-CropSyst simulation in UVA’s Rivanna HPC clusters
+            - Mentored a student to develop an Asymmetric Nash Bargaining framework to model negotiations among California, Arizona, and Nevada to curtail the usage of Colorado River’s water.
+            - Developed an integer linear programming (ILP) optimizer using Gurobi for matching buyers and sellers in bipartite networks representing river water rights markets.
     - title: Graduate Research Assistant
       institution: Kansas State University, Manhattan, KS, USA
       year: 2016-2021
       description:
-        - Description 1.
-        - Description 2.
+        - title: Network Epidemic Models
+          contents:
+            - Designed and developed a hybrid compartmental agent-based model to simulate the spread of Zika virus using both vectored and sexual transmission mechanisms in a sexual contact network.
+            - Developed a network epidemic model to simulate African Swine Fever (ASF) virus spread in US swine movement networks.
+        - title: Graph Miningn
+          contents:
+            - Designed a graph generation model to generate random graph for sexual contact among adult population based on agregate data on sexual behavior in the USA.
+            - Designed a graph generation model that combines multiple aggregate datasets to produce animal movement graphs in the USA.
+        - title: Machine Learning
+          contents:
+            - Developed a feature selection framework to improve the performance of predicting time series data for weekly dengue cases when training data is inadequate.
+        - title: Blockchain
+          contents:
+            - Designed a blockchain-based distributed data management system for US beef cattle supply chains using Ethereum smart contracts.
+        - title: Data Analytics as a Service
+          contents:
+            - Developed a web-based dashboard to visualize data, run simulations, and analyze results of dengue risk forecasts with a map interface using leaflet.js and PostGIS.
 
     - title: Senior Software Engineer
       institution: Samsung R&D Institute Bangladesh, Dhaka, Bangladesh.
       year: 2013-2016
+      description:
+        - Led and managed a team of 5 to provide software quality assurance (SQA) for IoT applications in an Agile workflow. Deliverables included source code analysis, review, and unit/integration/compliance tests.
+        - Developed an IoTivity-compliant client by expanding a Constrained Application Protocol (CoAP) framework to test protocol compliance of the IoTivity framework.
+        - Implemented and maintained a TURN-based NAT traversal solution to establish peer to peer connections using relay servers to connect hosts to enable remote access and control of devices.
+        - Developed test frameworks for unit and integration testing of Tizen mobile OS APIs.
 
     - title: Research Engineer
       institution: Institute of Information and Communication Technology (IICT), BUET, Dhaka, Bangladesh
       year: 2013 - 2013
       description:
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Conducted workshops on embedded systems as a teaching assistant. Prepared teaching materials on FPGA, Verilog, and Microcontrollers.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2008
+    - year: 2016
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Advanced Level in Samsung Software Certification Test
+    - year: 2014
       items:
-        - Max Planck Medal
+        - Grade 1 in annual performance evaluation at Samsung
+    - year: 2013
+      items:
+        - Placed 1st in Solution Lab of Samsung R&D Institute Bangladesh in Software Capability Test
+    - year: 2011
+      items:
+        - Merit scholarships for being ranked 1st out of 84 enrolled students in the Cisco Networking Academy Program (CNAP) at BUET (2010-2011) in the CCNA Exploration 4.0 course
+    - year: 2010
+      items:
+        - Dean's List Award from Bangladesh University of Engineering and Technology (BUET)
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Machine Learning
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Sequence / time series data
+        - Learning on Graphs / GNNs
+        - Explainable AI
+    - title: Network Science
       items:
-        - Description 1.
-        - Description 2.
+        - Graph analytics at scale
+        - Processes on networks
+        - Agent based models
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Filmmaking, Photography, Music Production, Camping, and Traveling.
