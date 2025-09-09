@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://biocomplexity.virginia.edu/">Biocomplexity Institute and Initiative</a> - <a href="https://www.virginia.edu/">University of Virginia</a>
+subtitle: Researcher - Software Engineer
 
 profile:
   align: right
