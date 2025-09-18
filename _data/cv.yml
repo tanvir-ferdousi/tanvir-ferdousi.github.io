@@ -34,9 +34,15 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Algorithm Developer
+      institution: GM Research (Contracted via Akkodis, Inc., USA)
+      year: 2024 - Current
+      description:
+        - title: Computer Vision
+        - title: Internet of Things
     - title: Postdoctoral Research Associate
       institution: Biocomplexity Institute, University of Virginia, Charlottesville, VA, USA
-      year: 2021 - Current
+      year: 2021 - 2024
       description:
         - title: A CyberInfrastructure for Network Engineering and Science (CINES)
           contents:
@@ -56,7 +62,7 @@
           contents:
             - Designed and developed a hybrid compartmental agent-based model to simulate the spread of Zika virus using both vectored and sexual transmission mechanisms in a sexual contact network.
             - Developed a network epidemic model to simulate African Swine Fever (ASF) virus spread in US swine movement networks.
-        - title: Graph Miningn
+        - title: Graph Mining
           contents:
             - Designed a graph generation model to generate random graph for sexual contact among adult population based on agregate data on sexual behavior in the USA.
             - Designed a graph generation model that combines multiple aggregate datasets to produce animal movement graphs in the USA.
