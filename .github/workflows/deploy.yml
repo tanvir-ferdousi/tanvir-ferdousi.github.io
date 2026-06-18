@@ -6,6 +6,7 @@ on:
       - master
       - main
     paths:
+      - "_sass/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
@@ -33,6 +34,7 @@ on:
       - master
       - main
     paths:
+      - "_sass/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
