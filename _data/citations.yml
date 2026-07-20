@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-07-20'
 papers:
   tEofsW0AAAAJ:3fE2CSJIrl8C:
     citations: 6
@@ -14,7 +14,7 @@ papers:
     title: Graph-based prediction of spatio-temporal vaccine hesitancy from insurance claims data
     year: '2025'
   tEofsW0AAAAJ:LkGwnXOMwfcC:
-    citations: 26
+    citations: 30
     title: A Windowed Correlation-Based Feature Selection Method to Improve Time Series Prediction of Dengue Fever Cases
     year: '2021'
   tEofsW0AAAAJ:MXK_kJrjxJIC:
@@ -50,7 +50,7 @@ papers:
     title: Earlier planting fails to replicate historical production conditions for US spring wheat under future climates
     year: '2025'
   tEofsW0AAAAJ:eQOLeE2rZwMC:
-    citations: 69
+    citations: 70
     title: A permissioned distributed ledger for the US beef cattle supply chain
     year: '2020'
   tEofsW0AAAAJ:u-x6o8ySG0sC:
