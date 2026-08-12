@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-12'
 papers:
   tEofsW0AAAAJ:3fE2CSJIrl8C:
-    citations: 6
+    citations: 5
     title: Sensitivity of Snow Magnitude and Duration to Hydrology Model Parameters
     year: '2024'
   tEofsW0AAAAJ:8k81kl-MbHgC:
@@ -10,11 +10,11 @@ papers:
     title: 'Value-based resource matching with fairness criteria: Application to agricultural water trading'
     year: '2024'
   tEofsW0AAAAJ:KlAtU1dfN6UC:
-    citations: 5
+    citations: 7
     title: Graph-based prediction of spatio-temporal vaccine hesitancy from insurance claims data
     year: '2025'
   tEofsW0AAAAJ:LkGwnXOMwfcC:
-    citations: 29
+    citations: 30
     title: A Windowed Correlation-Based Feature Selection Method to Improve Time Series Prediction of Dengue Fever Cases
     year: '2021'
   tEofsW0AAAAJ:MXK_kJrjxJIC:
@@ -46,15 +46,15 @@ papers:
     title: Generation of swine movement network and analysis of efficient mitigation strategies for African swine fever virus
     year: '2019'
   tEofsW0AAAAJ:Zph67rFs4hoC:
-    citations: 1
+    citations: 2
     title: Earlier planting fails to replicate historical production conditions for US spring wheat under future climates
     year: '2025'
   tEofsW0AAAAJ:eQOLeE2rZwMC:
-    citations: 71
+    citations: 70
     title: A permissioned distributed ledger for the US beef cattle supply chain
     year: '2020'
   tEofsW0AAAAJ:u-x6o8ySG0sC:
-    citations: 28
+    citations: 27
     title: Quantifying the impact of early-stage contact tracing on controlling Ebola diffusion
     year: '2018'
   tEofsW0AAAAJ:zYLM7Y9cAGgC:
