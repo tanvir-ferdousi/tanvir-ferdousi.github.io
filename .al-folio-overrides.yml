@@ -1,0 +1,10 @@
+---
+version: 1
+overrides:
+  _sass/_navbar.scss:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: _sass/_navbar.scss
+    upstream_sha256: fa546433c752f6df0ce69ba686d699e1967c671435440f1c96337889e9937f62
+    local_sha256: 0330a7d4729d34281b6134eeb445e934a0363b59d9e3e7bcb38fe7204d81e6b2
+    acknowledged_at: "2026-10-28"
