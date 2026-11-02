@@ -1,6 +1,20 @@
 ---
 version: 1
 overrides:
+  _includes/cv/education.liquid:
+    owner: al_folio_cv
+    gem_version: 1.0.2
+    upstream_path: templates/cv/education.liquid
+    upstream_sha256: f618efe3bc4caeab8f8f6efaae8386d658d4eb6995ebeb32855e173da37f8d2a
+    local_sha256: 20c938ace36903bc39e7890883f2b3e7cd16d380634184a3b9f7d8da8e6c75c8
+    acknowledged_at: "2026-10-28"
+  _includes/cv/experience.liquid:
+    owner: al_folio_cv
+    gem_version: 1.0.2
+    upstream_path: templates/cv/experience.liquid
+    upstream_sha256: 901c87d2e97fea8a679d811e83893267b10eec6ae65b34aee95d8948c5c56c2a
+    local_sha256: 0310bc4c7b581e1766a55e3e08e28f05805159f7f5082f9cd3d1fbc0fe95f229
+    acknowledged_at: "2026-10-28"
   _sass/_navbar.scss:
     owner: al_folio_core
     gem_version: 1.0.15

@@ -1,0 +1,80 @@
+{% comment %}
+  Unified education entry renderer for both RenderCV and JSONResume formats
+  Handles both:
+  - RenderCV: institution, area, studyType (or degree), start_date, end_date, courses, highlights
+  - JSONResume: institution, area, studyType, startDate, endDate, courses, highlights
+  The date range is shown at the top right of each entry; locations are not rendered.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    {% comment %} `capture` keeps the surrounding whitespace, so strip before testing for emptiness {% endcomment %}
+    {% capture start_date %}
+      {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
+    {% endcapture %}
+    {% assign start_date = start_date | strip %}
+    {% capture end_date %}
+      {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
+    {% endcapture %}
+    {% assign end_date = end_date | strip %}
+    {% capture point_date %}
+      {% if entry.date %}{{ entry.date }}{% elsif entry.releaseDate %}{{ entry.releaseDate }}{% endif %}
+    {% endcapture %}
+    {% assign point_date = point_date | strip %}
+
+    {% if start_date != '' %}
+      {% assign startDate = start_date | split: '-' | first %}
+      {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
+      {% assign date = startDate | append: ' - ' | append: endDate %}
+    {% elsif point_date != '' %}
+      {% assign date = point_date | split: '-' | first %}
+    {% else %}
+      {% assign date = null %}
+    {% endif %}
+
+    {% capture study_type %}
+      {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
+    {% endcapture %}
+    {% assign study_type = study_type | strip %}
+
+    <li class="list-group-item cv-entry">
+      <div class="cv-entry-header">
+        <h6 class="title font-weight-bold">
+          {% if entry.url %}
+            <a href="{{ entry.url }}">{{ study_type }}</a>
+          {% else %}
+            {{ study_type }}
+          {% endif %}
+        </h6>
+        {% if date %}
+          <span class="badge font-weight-bold danger-color-dark text-uppercase cv-entry-date">{{ date }}</span>
+        {% endif %}
+      </div>
+
+      {% if entry.institution %}
+        <h6 style="font-size: 0.95rem">{{ entry.institution }}</h6>
+      {% endif %}
+
+      {% if entry.area %}
+        <h6 style="font-size: 0.95rem; font-style: italic">{{ entry.area }}</h6>
+      {% endif %}
+
+      {% if entry.courses or entry.highlights %}
+        <ul class="items">
+          {% for item in entry.courses %}
+            <li>
+              <span class="item">{{ item }}</span>
+            </li>
+          {% endfor %}
+          {% for item in entry.highlights %}
+            <li>
+              <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+{% include cv/entry_header_styles.liquid %}
