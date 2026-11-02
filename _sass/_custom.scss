@@ -1,0 +1,46 @@
+/*******************************************************************************
+ * Site customizations
+ *
+ * Loaded last by assets/css/main.scss, so anything here overrides the
+ * al_folio_core theme defaults.
+ ******************************************************************************/
+
+// -----------------------------------------------------------------------------
+// Accent colors
+//
+// "theme" colors are used for links, the selected navbar item, badges, and
+// other highlights; "hover" colors apply when the mouse is over a link.
+// Any CSS color works: hex (#0076df), rgb(...), or a named color.
+// -----------------------------------------------------------------------------
+
+$light-theme-color: #0076df;
+$light-hover-color: #0076df;
+
+$dark-theme-color: #58a6ff;
+$dark-hover-color: #58a6ff;
+
+:root {
+  --global-theme-color: #{$light-theme-color};
+  --global-hover-color: #{$light-hover-color};
+  --global-code-bg-color: #{rgba($light-theme-color, 0.05)};
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #{$dark-theme-color};
+  --global-hover-color: #{$dark-hover-color};
+}
+
+// -----------------------------------------------------------------------------
+// Navbar
+//
+// bootstrap-compat.css sets `.collapse { visibility: hidden }` after tailwind.css.
+// tailwind's `.navbar-expand-sm .navbar-collapse` restores display but not
+// visibility, so without this the desktop menu stays invisible.
+// -----------------------------------------------------------------------------
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-collapse.collapse {
+    display: flex !important;
+    visibility: visible !important;
+  }
+}

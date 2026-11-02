@@ -42,8 +42,13 @@ The simulation results suggest that for a high relative transmissibility of the 
     The plots show the results of pathogen survival analysis of Zika virus. These were obtained by varying the following parameters: sexual transmission rate (1st row), relative transmissibility of convalescent hosts (2nd row), proportion of symptomatically infected individuals (3rd row), and relative transmissibility of asymptomatic hosts (4th row). The vertical axes indicates the host infection lengths (1st col), pathogen survival period (2nd col), and attack rate (3rd col). Each data point (blue square) is an average of 500 stochastic simulations. The shaded regions mark 95% confidence intervals.
 </div>
 
-| Publication | Source Code | Official Project Page |
-|-------------|----------|--------|
+<!-- prettier-ignore-start -->
+
+| Publication                                                      | Source Code                                                        | Official Project Page                                                                         |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
 | [Scientific Reports](https://doi.org/10.1038/s41598-019-43651-3) | [GitHub](https://github.com/tanvir-ferdousi/intercon-network-zikv) | [K-State NetSE](http://www.ece.k-state.edu/netse/projects/science_projects/longdistance.html) |
 {:.table .table-bordered}
+
+<!-- prettier-ignore-end -->
+
 <!-- The work was published in Scientific Reports (Nature), which can be accessed via this [link](https://doi.org/10.1038/s41598-019-43651-3). The official project page of the NetSE group can be found [here](http://www.ece.k-state.edu/netse/projects/sprojects/longdistance.html). -->

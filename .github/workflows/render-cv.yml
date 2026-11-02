@@ -1,14 +1,7 @@
 name: Render a CV
+# Manual only: _data/cv.yml uses al-folio display fields that RenderCV's schema
+# rejects, and the CV PDF (assets/pdf/tanvir_ferdousi_cv.pdf) is maintained by hand.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:

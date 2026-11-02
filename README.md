@@ -63,6 +63,7 @@ ImageMagick creates the responsive `.webp` image variants. Without it the build 
 | Code page table                  | [`_pages/code.md`](_pages/code.md)                                     |
 | Social icons and email           | [`_data/socials.yml`](_data/socials.yml)                               |
 | Site name, footer, theme options | [`_config.yml`](_config.yml)                                           |
+| Link and accent colors           | [`_sass/_custom.scss`](_sass/_custom.scss)                             |
 
 ### Publications
 
@@ -127,6 +128,34 @@ Remember to update `assets/pdf/tanvir_ferdousi_cv.pdf` too; the PDF isn't genera
 
 A page shows up in the top menu when its front matter has `nav: true`; `nav_order` sets its position.
 
+### Colors
+
+The accent color (links, the selected menu item, badges, hover effects) is set separately for light and dark mode at the top of [`_sass/_custom.scss`](_sass/_custom.scss):
+
+```scss
+$light-theme-color: #0076df; // light mode: links, selected menu item, badges
+$light-hover-color: #0076df; // light mode: links on mouse-over
+
+$dark-theme-color: #58a6ff; // dark mode
+$dark-hover-color: #58a6ff;
+```
+
+Change the hex values and save. With `jekyll serve` running, the page reloads with the new colors; if it doesn't, hard-refresh (Cmd+Shift+R), because the browser may have cached the old stylesheet. For example, to make links darken on hover in light mode, set `$light-hover-color: #00369f;`.
+
+A few ready-made options:
+
+| Look            | Light mode | Dark mode |
+| --------------- | ---------- | --------- |
+| Blue (current)  | `#0076df`  | `#58a6ff` |
+| Navy            | `#1f4e9c`  | `#7aa7f0` |
+| Teal            | `#00838f`  | `#4dd0e1` |
+| Green           | `#00873e`  | `#5fd38d` |
+| Original purple | `#b509ac`  | `#2698ba` |
+
+Pick dark-mode colors that are lighter than their light-mode partners, so links stay readable on the dark background. The light mode's faint inline-code background is tinted from `$light-theme-color` automatically.
+
+`_custom.scss` loads after all the theme styles, so it's also the place for any other small CSS tweaks. Other theme variables you can override in the same `:root { ... }` / `html[data-theme="dark"] { ... }` blocks are listed in the theme's `_sass/_themes.scss` (run `bundle info al_folio_core --path` to find it), such as `--global-bg-color` and `--global-text-color`.
+
 ## Building and previewing locally
 
 Start a local server that rebuilds when you save a file:
@@ -161,29 +190,37 @@ Check progress in the repo's **Actions** tab ("Deploy site"). If the live site s
 
 Never edit or push to the `gh-pages` branch by hand; it's overwritten on every deploy.
 
-Other workflows you may see in the Actions tab:
+Other checks that run on push:
 
-- **Integration tests** comes from the al-folio starter and fails on this site, because the site keeps local theme overrides and no demo content. It doesn't affect deployment.
-- **Render a CV** runs when `_data/cv.yml` changes. It writes to `assets/rendercv/rendercv_output/` only and never touches your CV PDF.
+- **Prettier code formatter** fails if any file isn't formatted the way Prettier wants. Before pushing, run `npx prettier . --check`, or `npx prettier --write <file>` to fix a file. Two things to watch for in Markdown:
+  - A Kramdown class line such as `{:.table .table-bordered}` must sit directly under its table, with no blank line, or the table loses its styling. Prettier adds that blank line, so these tables are wrapped in `<!-- prettier-ignore-start -->` / `<!-- prettier-ignore-end -->`. Do the same for any new styled table.
+  - Leave `assets/css/main.scss` alone; it's in `.prettierignore` on purpose.
+- **Integration tests** and **Render a CV** are set to manual-only (`workflow_dispatch`). They're al-folio's template checks and RenderCV PDF builder, and they fail on this site by design. A future al-folio upgrade that copies in new versions of `.github/workflows/unit-tests.yml` or `render-cv.yml` will turn them back on, so keep the manual-only `on:` block when merging.
 
 ## Local theme overrides
 
 The site overrides a few files from the theme gems. Each override shadows the gem's copy entirely:
 
-| Local file                                                         | Why                                                                                                      |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| [`_sass/_navbar.scss`](_sass/_navbar.scss)                         | Keeps the desktop menu visible; the Bootstrap-compat layer otherwise hides it with `visibility: hidden`. |
-| [`_includes/cv/experience.liquid`](_includes/cv/experience.liquid) | CV layout: date at the top right, no location column.                                                    |
-| [`_includes/cv/education.liquid`](_includes/cv/education.liquid)   | Same layout for Education.                                                                               |
-| `_includes/cv/entry_header_styles.liquid`                          | Shared styles for the two templates above.                                                               |
+| Local file                                                         | Why                                                                                                    |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| [`assets/css/main.scss`](assets/css/main.scss)                     | Identical to the theme's copy, plus one last line: `@use "custom";`, which loads `_sass/_custom.scss`. |
+| [`_includes/cv/experience.liquid`](_includes/cv/experience.liquid) | CV layout: date at the top right, no location column.                                                  |
+| [`_includes/cv/education.liquid`](_includes/cv/education.liquid)   | Same layout for Education.                                                                             |
 
-These are recorded in `.al-folio-overrides.yml`, so after updating the theme gems you can see whether the upstream files changed:
+Two more site-owned files support these. They aren't copies of theme files, so they never need syncing:
+
+- [`_sass/_custom.scss`](_sass/_custom.scss) holds the colors and a navbar fix that keeps the desktop menu visible (the Bootstrap-compat layer otherwise hides it with `visibility: hidden`).
+- `_includes/cv/entry_header_styles.liquid` holds the styles shared by the two CV templates.
+
+The overrides are recorded in `.al-folio-overrides.yml`, so after updating the theme gems you can see whether the upstream files changed:
 
 ```bash
 bundle exec al-folio upgrade overrides audit
-bundle exec al-folio upgrade overrides diff _sass/_navbar.scss   # see what changed upstream
-bundle exec al-folio upgrade overrides accept _sass/_navbar.scss # after merging the changes in
+bundle exec al-folio upgrade overrides diff assets/css/main.scss   # see what changed upstream
+bundle exec al-folio upgrade overrides accept assets/css/main.scss # after merging the changes in
 ```
+
+When re-syncing `assets/css/main.scss`, copy the theme's new version and add `@use "custom";` back as the last line. The file is listed in `.prettierignore` so the formatter doesn't change it.
 
 ## Upgrading al-folio
 
@@ -199,7 +236,7 @@ bundle exec al-folio upgrade overrides accept _sass/_navbar.scss # after merging
    bundle exec al-folio upgrade overrides audit
    ```
 
-4. Preview locally (`bundle exec jekyll serve`), especially the navbar and the CV page, since those use overrides.
+4. Preview locally (`bundle exec jekyll serve`), especially the navbar, link colors, and the CV page, since those use overrides.
 5. Commit and push.
 
 The pre-v1 version of the site is preserved on the `backup/pre-v1-upgrade` branch.

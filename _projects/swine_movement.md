@@ -29,8 +29,13 @@ We find that high in-degree farm operations play critical roles in spreading the
     The figures compare several isolation (quarantine) schemes based on farm node centrality measures. Three quarantine strategies (high in degree, \(K_{in}\), high out degree, \(K_{out}\), and high betweenness, \(BC\)) are compared. For each strategy, different number of farms are isolated gradually from ranked lists of above mentioned centralities. The left plot shows the epidemic attack rates and the right plot shows the epidemic lengths. The data points are mean values computed from 10,000 stochastic simulations and the shaded regions show 95% confidence intervals.
 </div>
 
-| Publication | Source Code | Official Project Page |
-|-------------|----------|--------|
+<!-- prettier-ignore-start -->
+
+| Publication                                                                           | Source Code                                                        | Official Project Page                                                                   |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225785) | [GitHub](https://github.com/tanvir-ferdousi/movement-network-asfv) | [K-State NetSE](http://www.ece.k-state.edu/netse/projects/science_projects/proj17.html) |
 {:.table .table-bordered}
+
+<!-- prettier-ignore-end -->
+
 <!-- The work was published in PLoS ONE, which can be accessed via this [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225785). The official project page of the NetSE group can be found [here](http://www.ece.k-state.edu/netse/projects/sprojects/proj17.html). -->
