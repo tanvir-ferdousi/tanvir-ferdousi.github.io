@@ -4,6 +4,7 @@ permalink: /code/
 title: code
 description: Software implementations of my works.
 nav: true
+nav_order: 4
 ---
 
 <!-- Released source codes of my works.

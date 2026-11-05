@@ -15,6 +15,13 @@ overrides:
     upstream_sha256: 901c87d2e97fea8a679d811e83893267b10eec6ae65b34aee95d8948c5c56c2a
     local_sha256: 0310bc4c7b581e1766a55e3e08e28f05805159f7f5082f9cd3d1fbc0fe95f229
     acknowledged_at: "2026-10-28"
+  _includes/selected_papers.liquid:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: _includes/selected_papers.liquid
+    upstream_sha256: 2ea68b7784ce9638aa1f4f81c4fd2508f05c315bad0cf6c63223fe526de1e364
+    local_sha256: f71b039e50564c6d587a26c32bb7b96e9a6410d2101437495308e1c312d11a84
+    acknowledged_at: "2026-11-05"
   assets/css/main.scss:
     owner: al_folio_core
     gem_version: 1.0.15

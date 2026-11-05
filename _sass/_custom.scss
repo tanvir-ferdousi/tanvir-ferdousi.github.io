@@ -31,6 +31,25 @@ html[data-theme="dark"] {
 }
 
 // -----------------------------------------------------------------------------
+// Home page "selected publications"
+//
+// Hide the left venue-badge column (and any preview thumbnail in it) and let the
+// title/authors column use the full width. The publications page is unaffected.
+// -----------------------------------------------------------------------------
+
+.selected-publications .bibliography > li > .row {
+  > .abbr {
+    display: none;
+  }
+
+  > .col-sm-8,
+  > .col-sm-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Navbar
 //
 // bootstrap-compat.css sets `.collapse { visibility: hidden }` after tailwind.css.

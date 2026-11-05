@@ -61,6 +61,7 @@ ImageMagick creates the responsive `.webp` image variants. Without it the build 
 | CV page                          | [`_data/cv.yml`](_data/cv.yml)                                         |
 | CV PDF (icon on CV page)         | `assets/pdf/tanvir_ferdousi_cv.pdf`                                    |
 | Code page table                  | [`_pages/code.md`](_pages/code.md)                                     |
+| News items                       | [`_news/`](_news/)                                                     |
 | Social icons and email           | [`_data/socials.yml`](_data/socials.yml)                               |
 | Site name, footer, theme options | [`_config.yml`](_config.yml)                                           |
 | Link and accent colors           | [`_sass/_custom.scss`](_sass/_custom.scss)                             |
@@ -123,6 +124,23 @@ highlights:
 ```
 
 Remember to update `assets/pdf/tanvir_ferdousi_cv.pdf` too; the PDF isn't generated from `cv.yml`.
+
+### News
+
+Each news item is a file in [`_news/`](_news/), named `YYYY-MM-DD-short-name.md`:
+
+```markdown
+---
+layout: post
+date: 2025-08-27 12:00:00-0500
+inline: true
+related_posts: false
+---
+
+New paper in _Journal Name_: [Paper title](https://doi.org/...).
+```
+
+The news page (`/news/`) lists every item, newest first. The home page shows the latest three, set by `announcements.limit` in [`_pages/about.md`](_pages/about.md). With `inline: true` the text appears directly in the list. For a longer announcement, set `inline: false`, add a `title:`, and write the full text below the front matter; the list then shows the title as a link to its own page.
 
 ### Navigation bar
 
@@ -201,15 +219,16 @@ Other checks that run on push:
 
 The site overrides a few files from the theme gems. Each override shadows the gem's copy entirely:
 
-| Local file                                                         | Why                                                                                                    |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| [`assets/css/main.scss`](assets/css/main.scss)                     | Identical to the theme's copy, plus one last line: `@use "custom";`, which loads `_sass/_custom.scss`. |
-| [`_includes/cv/experience.liquid`](_includes/cv/experience.liquid) | CV layout: date at the top right, no location column.                                                  |
-| [`_includes/cv/education.liquid`](_includes/cv/education.liquid)   | Same layout for Education.                                                                             |
+| Local file                                                             | Why                                                                                                    |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [`assets/css/main.scss`](assets/css/main.scss)                         | Identical to the theme's copy, plus one last line: `@use "custom";`, which loads `_sass/_custom.scss`. |
+| [`_includes/cv/experience.liquid`](_includes/cv/experience.liquid)     | CV layout: date at the top right, no location column.                                                  |
+| [`_includes/cv/education.liquid`](_includes/cv/education.liquid)       | Same layout for Education.                                                                             |
+| [`_includes/selected_papers.liquid`](_includes/selected_papers.liquid) | Adds a `selected-publications` class so the home page list can be styled on its own.                   |
 
 Two more site-owned files support these. They aren't copies of theme files, so they never need syncing:
 
-- [`_sass/_custom.scss`](_sass/_custom.scss) holds the colors and a navbar fix that keeps the desktop menu visible (the Bootstrap-compat layer otherwise hides it with `visibility: hidden`).
+- [`_sass/_custom.scss`](_sass/_custom.scss) holds the colors, the home page selected-publications layout (no venue-badge column, full-width entries), and a navbar fix that keeps the desktop menu visible (the Bootstrap-compat layer otherwise hides it with `visibility: hidden`).
 - `_includes/cv/entry_header_styles.liquid` holds the styles shared by the two CV templates.
 
 The overrides are recorded in `.al-folio-overrides.yml`, so after updating the theme gems you can see whether the upstream files changed:
