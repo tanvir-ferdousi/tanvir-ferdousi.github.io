@@ -54,6 +54,8 @@ ImageMagick creates the responsive `.webp` image variants. Without it the build 
 | -------------------------------- | ---------------------------------------------------------------------- |
 | Home page text, subtitle, phone  | [`_pages/about.md`](_pages/about.md)                                   |
 | Profile photo                    | `assets/img/profile_pic.jpg` (name is set in `_pages/about.md`)        |
+| Browser tab icon ("TF")          | `assets/img/favicon.svg` (`icon` in `_config.yml`)                     |
+| iPhone/iPad home-screen icon     | `assets/icons/apple-touch-icon.png`, 180x180 (`apple_touch_icon`)      |
 | Publications                     | [`_bibliography/papers.bib`](_bibliography/papers.bib)                 |
 | Publication PDFs                 | `assets/pdf/`                                                          |
 | Projects                         | [`_projects/*.md`](_projects/), with images in `assets/img/<project>/` |

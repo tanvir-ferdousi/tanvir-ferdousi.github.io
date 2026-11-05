@@ -31,6 +31,17 @@ html[data-theme="dark"] {
 }
 
 // -----------------------------------------------------------------------------
+// Home page profile photo: 20% larger than the theme's 30% column (phones keep
+// the theme's full-width layout).
+// -----------------------------------------------------------------------------
+
+@media (min-width: 576px) {
+  .profile {
+    width: 45%;
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Home page "selected publications"
 //
 // Hide the left venue-badge column (and any preview thumbnail in it) and let the

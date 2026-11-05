@@ -5,8 +5,8 @@ permalink: /
 subtitle: Researcher - Software Engineer
 
 profile:
-  align: right
-  image: profile_pic.jpg
+  align: left
+  image: profile_pic_2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
